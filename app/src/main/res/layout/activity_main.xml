@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fzs.hzy.aidldemo.MainActivity">
+
+    <Button
+        android:id="@+id/btn_getBookList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取书籍列表" />
+
+    <Button
+        android:id="@+id/btn_addBook_inOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="InOut 添加书籍" />
+
+    <Button
+        android:id="@+id/btn_addBook_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In 添加书籍" />
+
+    <Button
+        android:id="@+id/btn_addBook_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Out 添加书籍" />
+
+
+    <ProgressBar
+        android:id="@+id/customProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="6dp"/>
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="日期选择器" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px">
+
+        <TextView
+            android:id="@+id/tv_aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45px"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tv_productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36px"
+            android:layout_marginRight="36px"
+            android:layout_marginTop="30px"
+            android:lineSpacingExtra="14px"
+            android:textSize="45px"
+            android:textColor="#222222"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>
